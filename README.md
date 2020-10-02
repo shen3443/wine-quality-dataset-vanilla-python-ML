@@ -21,10 +21,10 @@ Modeling wine preferences by data mining from physicochemical properties. In Dec
 Then `main.py` creates instances of classes from the other files and calls methods on them to collect and prep the data, train the model on the data and finally test the model.
 
 #### neuron.py
-`neuron.py` contains the class `Neuron`. Neurons contain weights and biases and can perform methods like `feedforward()`, `linearsum()` (which is essentially a feedforward without the activation function, which is usefull in backprop), `changeweight()` and `changebias()`. Neurons act as the building blocks of the Neural Network.
+`neuron.py` contains the class `Neuron`. Neurons contain weights and biases and can perform methods like `feedforward()`, `linearsum()` (essentially a feedforward without the activation function, which is usefull in backprop), `changeweight()` and `changebias()`. Neurons act as the building blocks of the Neural Network.
 
 #### neural_network.py
-`neural_network.py` contains the class `NeuralNetwork`. The neural network consists of arrays (*layers*) of Neurons and can perform methods like `feedforward()`, `train()` and `test()`. `neural_network.py` is th largest and most dense/complex python file in the folder, largly because of the `train()` method (which deals with backprop).
+`neural_network.py` contains the class `NeuralNetwork`. The neural network consists of arrays (*layers*) of Neurons and can perform methods like `feedforward()`, `train()` and `test()`. `neural_network.py` is the largest and most dense/complex python file in the folder, largly because of the `train()` method (which deals with backprop).
 
 #### get_data.py
 `get_data.py` contains the class `GetData`, which handles reading the .csv file, extracting and cleaning the data, scaling the features, and splitting the data into train and test data. It does a lot of this when it is initialized, but is aided by the methods `feature_scale()` (which can normalize or standardize the data, depending on what is passed to the `technique` parameter) and `split_train_test()`.
