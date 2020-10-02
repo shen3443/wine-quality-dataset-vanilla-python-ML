@@ -48,12 +48,12 @@ The .csv file containing the data, as downloaded from https://archive.ics.uci.ed
 
 ## To Do:
 ### Short Term
--[ ] Finish README
--[ ] Reveiw code, make sure latest versions are represented, outdate/irrelevant code/comments are removed
--[ ] Upload analysis of data and model
--[ ] Replace hardcoded 'settings' in `main.py` with command line user inputs
+- [ ] Finish README
+- [ ] Reveiw code, make sure latest versions are represented, outdate/irrelevant code/comments are removed
+- [ ] Upload analysis of data and model
+- [ ] Replace hardcoded 'settings' in `main.py` with command line user inputs
 
 ### Long Term
--[ ] Detailed, long form explanation of all concepts & code
--[ ] Design, generate and upload graphs (Matplotlib?) & graphics to aid analysis
--[ ] Comparitive model built using ML library (could be an interesting comparison to see how much more efficient/effective it is vs vanilla python).
+- [ ] Detailed, long form explanation of all concepts & code
+- [ ] Design, generate and upload graphs (Matplotlib?) & graphics to aid analysis
+- [ ] Comparitive model built using ML library (could be an interesting comparison to see how much more efficient/effective it is vs vanilla python).
