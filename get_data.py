@@ -6,12 +6,9 @@ class GetData:
     Object that reads .csv file and stores usable data as properties
     Properties:
         self.path   =>      path of .csv File
-        self.data   =>      input values*, two dimentional array of floats
+        self.data   =>      input values, two dimentional array of floats
         self.ytrue  =>      expected outputs, array of integers
     
-
-    *input values have been adjusted such that:
-        x <= (x - mean(x)) / mean(x) = x / mean(x) - 1
     '''
     def __init__(self, path):
         self.path = path
