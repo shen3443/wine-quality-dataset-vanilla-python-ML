@@ -23,7 +23,7 @@ Python 3.6+
 2. Navigate to that folder
 3. Run `main.py`
 
-You will be prompted in the terminal with a number of options to adjust the settings of the neural network and data. For more on that, see [Settings](settings).
+You will be prompted in the terminal with a number of options to adjust the settings of the neural network and data. For more on that, see [Settings](##settings).
 
 
 ## Files
