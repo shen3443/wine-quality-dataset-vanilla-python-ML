@@ -136,12 +136,7 @@ class NeuralNetwork:
         for y, yhat in zip(yTrues, yPredictions):
             if y == yhat:
                 correct += 1
-                if yhat == 0:
-                    bad_correct += 1
-                elif yhat == 1:
-                    okay_correct += 1
-                elif yhat == 2:
-                    good_correct += 1
+                
         #Calculate accuracy as a percent of correct guesses
         accuracy = 100 * correct / len(yPreds)
 
