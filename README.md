@@ -14,6 +14,18 @@ P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.
 Modeling wine preferences by data mining from physicochemical properties. In Decision Support Systems, Elsevier, 47(4):547-553, 2009.
 
 
+## Instructions
+#### Requirements
+Python 3.6+
+
+#### Running the Neural Network
+1. Make sure all of the files including the .csv with the data are in the same folder
+2. Navigate to that folder
+3. Run `main.py`
+
+You will be prompted in the terminal with a number of options to adjust the settings of the neural network and data. For more on that, see Settings.
+
+
 ## Files
 #### main.py
 `main.py` allows the user to set a number of variables that act as 'settings', such as `hidden_activation_function` (which activation function to use for the hidden layer) or `feature_scale_technique` (whether to normalize or standardize the input data).
@@ -44,14 +56,36 @@ Then `main.py` creates instances of classes from the other files and calls metho
 The .csv file containing the data, as downloaded from https://archive.ics.uci.edu/ml/datasets/wine+quality
 
 
+## Settings
+There are a number of options regarding the handling of the data and the design of the neural network. They include the which activation function to use in the hidden layer, what portion of data to reserve for testing, and how to scale the features. They are set via user input in the command line.
+
+The recommended settings for best performance are:
+  
+   Activation : Sigmoid
+   Test Data  : 20%
+   Scaling    : Normal
+
+#### Activation Functions
+Select between the Sigmoid function, ReLU and leaky ReLU.
+
+#### Testing Data Size
+Set the portion of data you want to reserve for testing.
+
+#### Feature Scaling Technique
+Select between normalizing and standardizing the input data (features).
+
 
 
 ## To Do:
 ### Short Term
 - [ ] Finish README
+- [X] Add an Instructions section to README, explaining how to run the files
+- [X] Add a Settings section to README, explaining options and giving recomendations
+- [ ] Add links or better explanations to settings section
+- [ ] Run tests on model to find best settings to recommend
 - [ ] Reveiw code, make sure latest versions are represented, outdate/irrelevant code/comments are removed
 - [ ] Upload analysis of data and model
-- [ ] Replace hardcoded 'settings' in `main.py` with command line user inputs
+- [X] Replace hardcoded 'settings' in `main.py` with command line user inputs
 
 ### Long Term
 - [ ] Detailed, long form explanation of all concepts & code
