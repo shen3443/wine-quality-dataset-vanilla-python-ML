@@ -57,13 +57,13 @@ The .csv file containing the data, as downloaded from https://archive.ics.uci.ed
 
 
 ## Settings
-There are a number of options regarding the handling of the data and the design of the neural network. They include the which activation function to use in the hidden layer, what portion of data to reserve for testing, and how to scale the features. They are set via user input in the command line.
+There are a number of options regarding the handling of the data and the design of the neural network. They include which activation function to use in the hidden layer, what portion of data to reserve for testing, and how to scale the features. They are set via user input in the command line.
 
 The recommended settings for best performance are:
   
-   Activation : Sigmoid
-   Test Data  : 20%
-   Scaling    : Normal
+   Activation : Sigmoid \n
+   Test Data  : 20% \n
+   Scaling    : Normal \n
 
 #### Activation Functions
 Select between the Sigmoid function, ReLU and leaky ReLU.
