@@ -61,9 +61,11 @@ There are a number of options regarding the handling of the data and the design 
 
 The recommended settings for best performance are:
   
-   Activation : Sigmoid \n
-   Test Data  : 20% \n
-   Scaling    : Normal \n
+   Activation : Sigmoid 
+   
+   Test Data  : 20% 
+   
+   Scaling    : Normal 
 
 #### Activation Functions
 Select between the Sigmoid function, ReLU and leaky ReLU.
