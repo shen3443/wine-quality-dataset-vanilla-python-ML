@@ -1,13 +1,14 @@
 from activation import sigmoid, relu, leakyrelu
 
+
 class Neuron:
     '''
-    Neurons take a number of inputs: X = [x1,x2,x3...xn] and produce 1 output: y
-    via feedforward
+    Neurons take a number of inputs: X = [x1,x2,x3...xn] and produce
+    1 output: y via feedforward
     '''
     def __init__(self, weights, bias, activation):
-        #Assign parameter inputs to class attributes
-        self.__dict__.update({k: v for k,v in locals().items() if k != self})
+        # Assign parameter inputs to class attributes
+        self.__dict__.update({k: v for k, v in locals().items() if k != self})
 
     def feedforward(self, inputs):
         '''
@@ -26,7 +27,7 @@ class Neuron:
             return leakyrelu(total)
         else:
             raise Exception("Activation function not recognized")
-  
+
     def linearsum(self, inputs):
         '''
         Returns the output before being passed throught the activation
@@ -51,4 +52,3 @@ class Neuron:
         Replaces old bias with new bias
         '''
         self.bias = newbias
-  
