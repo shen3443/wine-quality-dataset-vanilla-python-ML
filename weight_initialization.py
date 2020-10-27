@@ -1,6 +1,7 @@
 import math
 from random import gauss
 
+
 def initialize(technique, fan_in, fan_out, n_weights):
     '''
     Calls relevant weight-initialization function
@@ -14,6 +15,8 @@ def initialize(technique, fan_in, fan_out, n_weights):
 
 
 ''' Xavier-normal Initialization '''
+
+
 def xavier(n1, n2, w):
     '''
     Returns a gaussian-normal list with a mean of 0 and
@@ -23,13 +26,15 @@ def xavier(n1, n2, w):
     '''
     weights = []
     variance = math.sqrt(2 / (n1 + n2))
-    sigma = math.sqrt(variance) #standard deviation
+    sigma = math.sqrt(variance)  # standard deviation
     for i in range(w):
         weights.append(gauss(0, sigma))
     return weights
 
 
 ''' He-normal Initialization '''
+
+
 def he(n, w):
     '''
     Returns a gaussian-normal list with a mean of 0 and
@@ -39,8 +44,7 @@ def he(n, w):
     '''
     weights = []
     variance = math.sqrt(2/n)
-    sigma = math.sqrt(variance) #standard deviation
+    sigma = math.sqrt(variance)  # standard deviation
     for i in range(w):
         weights.append(gauss(0, sigma))
     return weights
-
